@@ -12,7 +12,7 @@ describe("Testar funcionalidades, inlcusão, alteracao e remoção de um contao"
   });
 
   //alteracao de contato
-  it("Deve realizar a inclusão de um contato", () => {
+  it("Deve realizar a alteracao do contato", () => {
     cy.get(".edit").last().click();
     cy.get('[type="text"]').clear().type("Fatima Bernardes");
     cy.get('[type="email"]').clear().type("fatimabernardes@gmail.com");
@@ -21,7 +21,7 @@ describe("Testar funcionalidades, inlcusão, alteracao e remoção de um contao"
   });
 
   //remoção de contato
-  it("Deve realizar a inclusão de um contato", () => {
+  it("Deve deletar o contato", () => {
     cy.get(".delete").last().click();
   });
 });
