@@ -11,6 +11,9 @@ describe("Testar funcionalidades, inlcusão, alteracao e remoção de um contao"
     cy.get(".adicionar").click();
   });
 
+  //Ao ser adicionado contato é renderizado como ultimo na lista
+  //Para editar e excluir o contato adicionado anteriormente
+  //Utilizar a função .last para pegar o ultimo componente que estiver com ".edit"
   //alteracao de contato
   it("Deve realizar a alteracao do contato", () => {
     cy.get(".edit").last().click();
